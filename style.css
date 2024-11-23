@@ -139,13 +139,13 @@ a:hover {
   justify-content: center; 
 }
 .catalogue img {
-  width: 150px;   
-  height: 150px;   
+  width: 40px;   
+  height: 40px;   
   object-fit: cover; 
   border-radius: 5px; 
 }
 .catalogue {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
   gap: 10px;
 }
