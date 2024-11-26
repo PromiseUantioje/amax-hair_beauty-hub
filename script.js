@@ -20,20 +20,5 @@ document.getElementById('registrationForm').addEventListener('submit', async fun
 
      })
 
-     // Initialize and add the map
-     function initMap() {
-        // The location (latitude and longitude)
-        const location = { lat: 40.73061, lng: -73.935242 };
 
-        // Create the map centered at the location
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 12, // Zoom level
-            center: location,
-        });
-
-        // Add a marker at the location
-        const marker = new google.maps.Marker({
-            position: location,
-            map: map,
-        });
-    }
+       
