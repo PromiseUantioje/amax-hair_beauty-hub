@@ -213,9 +213,18 @@ footer ul li a:hover {
 }
 
 img{
-  height: 20px;
-  width: auto;
+    background-image: url('Hair Studio.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: rgb(31, 17, 17);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /* General reset */
 * {

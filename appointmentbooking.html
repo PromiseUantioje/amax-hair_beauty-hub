@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Appointment | Hair & Beauty Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 30px;
+        }
+        label {
+            font-size: 18px;
+            color: #333;
+            display: block;
+            margin: 15px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .btn-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        .btn-submit:hover {
+            background-color: #45a049;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Book Your Appointment</h1>
+        
+        <!-- Appointment Booking Form -->
+        <form action="/submit_appointment" method="POST">
+            <!-- Name -->
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+            </div>
+            
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+            
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+            
+            <!-- Service -->
+            <div class="form-group">
+                <label for="service">Service Type</label>
+                <select id="service" name="service" required>
+                    <option value="haircut">Haircut</option>
+                    <option value="styling">Hair Styling</option>
+                    <option value="coloring">Hair Coloring</option>
+                    <option value="facial">Facial</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="pedicure">Pedicure</option>
+                    <option value="massage">Massage</option>
+                    <option value="Training">On-site Training</option>
+                    <option value="Wigging">Wigging</option>
+                    <option value="Virtual">Virtual Training</option>
+                </select>
+            </div>
+            
+            <!-- Date -->
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            
+            <!-- Time -->
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            
+            <!-- Additional Notes -->
+            <div class="form-group">
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Any special requests or information"></textarea>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="btn-submit">Book Appointment</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
