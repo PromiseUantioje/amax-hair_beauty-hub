@@ -14,4 +14,4 @@ Features
 3. Promotional Tools: Highlight featured products and promotions to attract customers.
 4. Customer Insights: View analytics about customer preferences and feedback.
 
-# Hair_Beauty Hub Web/mobile app built using HTML, CSS, JS, DB, Flutter
+# Hair_Beauty Hub Web/mobile app built using HTML, CSS, JS, DB
