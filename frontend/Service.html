@@ -3,82 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Hair & Beauty Services</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: #f3e9ff; /* Soft purple background */
+            color: #4b0082; /* Indigo for text */
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             padding: 50px 0;
         }
         h1 {
             text-align: center;
-            color: #333;
-            margin-bottom: 40px;
+            color: #4b0082; /* Deep purple */
+            font-size: 36px;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         .services {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            gap: 20px;
         }
         .service-card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 22%;
-            margin-bottom: 20px;
+            background-color: #fff; /* White background */
+            border: 2px solid #c299ff; /* Light purple border */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 8px 15px rgba(75, 0, 130, 0.2); /* Purple shadow */
+            width: 23%;
             overflow: hidden;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .service-card:hover {
             transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(75, 0, 130, 0.3); /* Darker shadow on hover */
         }
         .service-card img {
             width: 100%;
             height: 200px;
             object-fit: cover;
+            border-bottom: 2px solid #c299ff; /* Purple border */
         }
-        .service-card .service-details {
+        .service-details {
             padding: 20px;
         }
         .service-card h3 {
-            color: #333;
-            margin-bottom: 15px;
-            font-size: 18px;
+            color: #4b0082; /* Deep purple for headings */
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-transform: capitalize;
         }
         .service-card p {
-            color: #666;
+            color: #5f4b8b; /* Softer purple for text */
             font-size: 14px;
             line-height: 1.6;
         }
-        .service-card .price {
-            font-size: 16px;
+        .price {
+            font-size: 18px;
             font-weight: bold;
-            color: #4CAF50;
+            color: #800080; /* Bold purple for price */
             margin-top: 10px;
         }
-        .service-card .btn-book {
+        .btn-book {
             display: inline-block;
             margin-top: 15px;
-            padding: 10px 15px;
-            background-color: #4CAF50;
-            color: white;
+            padding: 10px 20px;
+            background-color: #800080; /* Dark purple button */
+            color: #fff; /* White text */
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px; /* Rounded button */
             font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
-        .service-card .btn-book:hover {
-            background-color: #45a049;
+        .btn-book:hover {
+            background-color: #a020f0; /* Lighter purple on hover */
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Service.html">Service</a></li>
+            <li><a href="appointmentbooking.html">Appointment Booking</a></li>
+            <li><a href="Virtualtraining.html">Virtual Training</a></li>
+            <li><a href="Scholarship.html">Scholarship</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <h1>Our Hair & Beauty Services</h1>
         
@@ -130,36 +152,14 @@
             <!-- Training Service Card -->
             <div class="service-card">
                 <img src="Training.jpg" alt="Training">
-                <div class="Hair Styling & Wigging Training">
+                <div class="service-details">
                     <h3>Training</h3>
-                    <p>Unlock your potential in the world of hairdressing with our hands-on, expert-led Hair Training Program. Whether you're just starting out or looking to advance your skills, we offer tailored courses designed to help you master the latest trends, techniques, and tools in the hair industry.</p>
-                    <p>We Offer: Basic to Advanced Haircutting Techniques; Hair Styling & Treatments; Hair Coloring & Highlighting; Salon Business Skills.</p>
-                    <p>Why Choose Us? Hands-On Experience; Expert Instructors; Flexible Scheduling; Certification</p>
-                    <p>Get Started Today: Enroll in our Hair Training Program and take the first step towards becoming a certified hair professional. Whether your dream is to work in a salon, start your own business, or just improve your skills, we’re here to help you every step of the way.</p>
+                    <p>Unlock your potential in the world of hairdressing with our hands-on, expert-led Hair Training Program. Learn the latest trends and techniques from professionals.</p>
                     <p class="price">NGN350,000</p>
                     <a href="#" class="btn-book">Book Now</a>
-
-                      <!-- Wigs Card
-            <div class="service-card">
-                <img src="hair.jpg3.jpg" alt="Wigs">
-                <div class="Wig-details">
-                    <h3>Varieties of Wigs</h3>
-                    <p>Choose from our varieties of customised wigs for any occasion.</p>
-                    <p class="price">NGN68,000</p>
-                    <a href="#" class="btn-book">Order Now</a>
-                </div>
-            </div> -->
-
-            <!-- Hair Products Service Card -->
-            <!-- <div class="service-card">
-                <img src="" alt="Hair Products">
-                <div class="Hairproduct-details">
-                    <h3>Hair Products</h3>
-                    <p>quality Hair Products & Accesories available.</p>
-                    <p class="price">NGN3,000</p>
-                    <a href="" class="btn-book">Order Now</a>
                 </div>
             </div>
-
-</body> -->
+        </div>
+    </div>
+</body>
 </html>

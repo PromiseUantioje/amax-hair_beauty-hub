@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Virtual Hair & Beauty Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e9ff; /* Soft purple background */
+            margin: 0;
+            padding: 0;
+            color: #4b0082; /* Deep purple text */
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff; /* White background */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 8px 15px rgba(75, 0, 130, 0.2); /* Purple shadow */
+            border: 2px solid #c299ff; /* Light purple border */
+        }
+        h1 {
+            text-align: center;
+            color: #4b0082; /* Deep purple */
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        h2 {
+            color: #800080; /* Dark purple */
+            margin-top: 40px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .training-intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .training-intro p {
+            font-size: 18px;
+            color: #5f4b8b; /* Softer purple */
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .training-courses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .course-card {
+            background-color: #f9f4ff; /* Soft purple card background */
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(75, 0, 130, 0.15); /* Light purple shadow */
+            width: 30%;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #c299ff; /* Purple border */
+        }
+        .course-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(75, 0, 130, 0.3); /* Enhanced shadow on hover */
+        }
+        .course-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .course-card .course-details {
+            padding: 20px;
+        }
+        .course-card h3 {
+            color: #4b0082; /* Deep purple */
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .course-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .course-card .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #800080; /* Dark purple for price */
+            margin-top: 10px;
+        }
+        .course-card .btn-enroll {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #800080; /* Dark purple */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .course-card .btn-enroll:hover {
+            background-color: #a020f0; /* Lighter purple on hover */
+            transform: scale(1.05);
+        }
+        .training-info {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .training-info p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #4b0082; /* Deep purple */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Service.html">Service</a></li>
+            <li><a href="appointmentbooking.html">Appointment Booking</a></li>
+            <li><a href="Virtualtraining.html">Virtual Training</a></li>
+            <li><a href="Scholarship.html">Scholarship</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Virtual Hair & Beauty Training Program</h1>
+
+        <!-- Introduction Section -->
+        <div class="training-intro">
+            <p>Welcome to our exclusive <strong>Virtual Hair & Beauty Training</strong> program! Learn professional beauty techniques from the comfort of your home. Our online courses are designed for beginners and seasoned professionals alike.</p>
+        </div>
+
+        <!-- Training Courses Section -->
+        <h2>Our Virtual Training Courses</h2>
+        <div class="training-courses">
+            <!-- Course 1 -->
+            <div class="course-card">
+                <img src="Hair cutting.jfif" alt="Haircutting Course">
+                <div class="course-details">
+                    <h3>Haircutting Fundamentals</h3>
+                    <p>Learn techniques like clean lines, layering, and styles for various hair types. Perfect for beginners in hairdressing.</p>
+                    <p class="price">NGN120,000</p>
+                    <a href="#" class="btn-enroll">Enroll Now</a>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-card">
+                <img src="Hair Colouring.jfif" alt="Hair Coloring Course">
+                <div class="course-details">
+                    <h3>Hair Coloring Mastery</h3>
+                    <p>Master the art of hair coloring, including highlights, balayage, and creative techniques to become a coloring expert.</p>
+                    <p class="price">NGN120,000</p>
+                    <a href="#" class="btn-enroll">Enroll Now</a>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-card">
+                <img src="wig making.jfif" alt="Wig Making">
+                <div class="course-details">
+                    <h3>Wig Making & Styling</h3>
+                    <p>Learn to create custom, high-quality wigs using premium materials for protective styling or fashion purposes.</p>
+                    <p class="price">NGN280,000</p>
+                    <a href="#" class="btn-enroll">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Info Section -->
+        <div class="training-info">
+            <p>Our virtual courses offer flexibility, allowing you to learn at your own pace. Access video lessons, downloadable materials, and live webinars with industry experts.</p>
+            <p><strong>Start your beauty journey today by enrolling in our programs!</strong></p>
+        </div>
+    </div>
+
+</body>
+</html>

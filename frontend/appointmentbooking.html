@@ -3,62 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Book Your Appointment | Hair & Beauty Studio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f4e9ff; /* Light purple background */
+            color: #4b0082; /* Deep purple text */
         }
         .container {
-            width: 50%;
+            width: 60%;
             margin: 50px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            background-color: #fff; /* White background */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 8px 20px rgba(75, 0, 130, 0.2); /* Purple shadow */
+            border: 2px solid #c299ff; /* Light purple border */
         }
         h1 {
             text-align: center;
-            color: #4CAF50;
-            margin-bottom: 30px;
+            color: #4b0082; /* Deep purple */
+            font-size: 32px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
         }
         label {
-            font-size: 18px;
-            color: #333;
+            font-size: 16px;
+            color: #4b0082; /* Deep purple */
             display: block;
-            margin: 15px 0 5px;
+            margin: 10px 0 5px;
         }
         input, select, textarea {
             width: 100%;
-            padding: 10px;
-            font-size: 16px;
+            padding: 12px;
             margin-bottom: 20px;
+            font-size: 14px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 8px;
             box-sizing: border-box;
+            background-color: #f9f6ff; /* Light purple input background */
+        }
+        textarea {
+            resize: vertical;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #800080; /* Dark purple */
+            outline: none;
+            box-shadow: 0 0 8px rgba(128, 0, 128, 0.2); /* Light purple glow */
         }
         .btn-submit {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 30px;
+            background-color: #800080; /* Dark purple */
+            color: #fff;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
             border: none;
-            border-radius: 5px;
-            font-size: 18px;
+            border-radius: 10px;
             cursor: pointer;
             width: 100%;
-            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .btn-submit:hover {
-            background-color: #45a049;
+            background-color: #a020f0; /* Lighter purple */
+            transform: scale(1.02);
         }
         .form-group {
             margin-bottom: 20px;
         }
+        a {
+            color: #800080; /* Dark purple */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .note {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Service.html">Service</a></li>
+            <li><a href="appointmentbooking.html">Appointment Booking</a></li>
+            <li><a href="Virtualtraining.html">Virtual Training</a></li>
+            <li><a href="Scholarship.html">Scholarship</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
     <div class="container">
         <h1>Book Your Appointment</h1>
@@ -87,6 +129,7 @@
             <div class="form-group">
                 <label for="service">Service Type</label>
                 <select id="service" name="service" required>
+                    <option value="" disabled selected>Select a service</option>
                     <option value="haircut">Haircut</option>
                     <option value="styling">Hair Styling</option>
                     <option value="coloring">Hair Coloring</option>
@@ -94,9 +137,9 @@
                     <option value="manicure">Manicure</option>
                     <option value="pedicure">Pedicure</option>
                     <option value="massage">Massage</option>
-                    <option value="Training">On-site Training</option>
-                    <option value="Wigging">Wigging</option>
-                    <option value="Virtual">Virtual Training</option>
+                    <option value="training">On-site Training</option>
+                    <option value="wigging">Wigging</option>
+                    <option value="virtual">Virtual Training</option>
                 </select>
             </div>
             
@@ -121,9 +164,9 @@
             <!-- Submit Button -->
             <button type="submit" class="btn-submit">Book Appointment</button>
         </form>
+
+        <p class="note">Note: Please arrive 10 minutes early for your appointment. For cancellations, contact us 24 hours in advance.</p>
     </div>
 
 </body>
 </html>
-
-

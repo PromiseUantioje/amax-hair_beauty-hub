@@ -4,77 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Our Hair & Beauty Studio</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: #f4f0fa; /* Light purple background */
+            color: #3c2a5d; /* Darker purple text */
         }
         .header {
             background-image: url('Hair Studio.jpg');
             background-size: cover;
             background-position: center;
             height: 100vh;
-            color: rgb(31, 17, 17);
+            color: #fff;
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            border-bottom: 10px solid #6c5b7b; /* Fancy border at bottom */
         }
         .header h1 {
-            font-size: 48px;
+            font-size: 50px;
             margin: 0;
-            padding: 0;
+            text-shadow: 2px 2px 4px #000;
         }
         .header p {
             font-size: 20px;
             margin-top: 20px;
             max-width: 800px;
             line-height: 1.6;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+            padding: 10px 20px;
+            border-radius: 10px;
         }
         .intro-section {
             padding: 50px 20px;
             text-align: center;
+            background-color: #ffffff;
+            border: 3px solid #9c89b8;
+            border-radius: 15px;
+            margin: 30px auto;
+            max-width: 1000px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .intro-section h2 {
             font-size: 36px;
-            color: #4CAF50;
+            color: #6c5b7b;
             margin-bottom: 20px;
         }
         .intro-section p {
             font-size: 18px;
             color: #555;
-            line-height: 1.6;
+            line-height: 1.8;
             max-width: 900px;
             margin: 0 auto;
         }
         .cta-button {
-            background-color: #4CAF50;
+            background-color: #6c5b7b; /* Purple button */
             color: white;
             padding: 15px 30px;
             text-decoration: none;
             font-size: 18px;
-            border-radius: 5px;
+            border-radius: 8px;
             margin-top: 30px;
             display: inline-block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background-color 0.3s;
         }
         .cta-button:hover {
-            background-color: #45a049;
+            background-color: #957dad;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
+    <!-- <body onload="showMessage()"> -->
+            <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Service.html">Service</a></li>
+            <li><a href="appointmentbooking.html">Appointment Booking</a></li>
+            <li><a href="Virtualtraining.html">Virtual Training</a></li>
+            <li><a href="Scholarship.html">Scholarship</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
     <!-- Header Section (Image and Welcome) -->
     <div class="header">
-        <h1></h1>    
+        <h1>Welcome to Our Hair & Beauty Studio</h1>
+        <p>Your beauty is our passion, let us transform your look and rejuvenate your soul.</p>
     </div>
 
     <!-- Introduction Section -->
     <div class="intro-section">
-        <h2>Welcome to Our Hair & Beauty Studio; Your Beauty, Our Passion</h2>
+        <h2>Welcome to Our Hair & Beauty Studio</h2>
         <p>At our Hair & Beauty Studio, we believe in enhancing your natural beauty through professional, personalized services. Whether you're getting ready for a special event or just treating yourself, our team of experts is here to provide you with the best beauty experience possible.</p>
         <p>From chic hairstyles to relaxing spa treatments, we offer a wide range of services tailored to your needs. Our goal is to make you feel beautiful, confident, and rejuvenated with every visit.</p>
         <p>Transform your look and feel amazing with our expert hair and beauty services. From haircuts and styling to facials and skin treatments, we offer personalized beauty experiences for everyone.</p>
@@ -82,4 +111,11 @@
     </div>
 
 </body>
+
+<footer>
+        <div>
+            <p>&copy; 2024 Amax Hair & Beauty Hub. All rights reserved.</p>
+            <p>Website Designed by Promise Uantioje</p>
+        </div>
+    </footer>
 </html>

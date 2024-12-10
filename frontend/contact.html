@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e9ff; /* Soft purple background */
+            margin: 0;
+            padding: 0;
+            color: #4b0082; /* Deep purple for text */
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff; /* White background */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 8px 15px rgba(75, 0, 130, 0.2); /* Purple shadow */
+            border: 2px solid #c299ff; /* Light purple border */
+        }
+        h1 {
+            text-align: center;
+            color: #4b0082; /* Deep purple */
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #4b0082; /* Deep purple */
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #c299ff; /* Purple border */
+            border-radius: 8px; /* Rounded corners */
+            font-size: 14px;
+            background-color: #f9f4ff; /* Soft purple background for inputs */
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group button {
+            background-color: #800080; /* Dark purple */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .form-group button:hover {
+            background-color: #a020f0; /* Lighter purple on hover */
+            transform: scale(1.05);
+        }
+        .form-group span {
+            color: red;
+            font-size: 12px;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border: 2px solid #800080; /* Darker purple on focus */
+            background-color: #fff;
+        }
+        .contact-info {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .contact-info p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #5f4b8b; /* Softer purple */
+        }
+        .contact-info a {
+            color: #800080; /* Dark purple for links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Service.html">Service</a></li>
+            <li><a href="appointmentbooking.html">Appointment Booking</a></li>
+            <li><a href="Virtualtraining.html">Virtual Training</a></li>
+            <li><a href="Scholarship.html">Scholarship</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <form action="#" method="POST" id="contact-form">
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Your Name <span>*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email Address <span>*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Subject -->
+            <div class="form-group">
+                <label for="subject">Subject <span>*</span></label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Your Message <span>*</span></label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+
+        <!-- Additional Contact Info -->
+        <div class="contact-info">
+            <p>Have more questions? Feel free to reach us via:</p>
+            <p>Email: <a href="mailto:info@example.com">promiseuantioje@gmail.com</a></p>
+            <p>Phone: <a href="tel:+123456789">+234 806 137 5438</a></p>
+            <p>Visit our office at: B57, Tradefair Complex, Lagos Badagry Express way</p>
+        </div>
+    </div>
+
+</body>
+</html>
